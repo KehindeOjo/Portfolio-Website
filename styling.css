@@ -25,6 +25,35 @@ body {
   z-index: 999;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #001f3f; /* Keep your existing color */
+  padding: 10px 0;
+  z-index: 1000; /* Ensures header stays above other elements */
+}
+
+/* Sticky Header & Navbar */
+.navbar {
+  position: fixed; /* Keeps it stuck at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #002244;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000; /* Ensures it stays above content */
+}
+
+/* Prevent Navbar From Overlapping Content */
+body {
+  padding-top: 70px; /* Creates space below navbar */
+}
+
 .navbar .brand {
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
@@ -56,10 +85,20 @@ body {
 
 /* Mobile Menu - Hidden by default */
 .menu-toggle {
-  display: none;
+  display: block; /* Ensure it's visible only on mobile */
   font-size: 28px;
   cursor: pointer;
-  color: #fff;
+  color: #f1efef;
+  position: absolute; /* Ensures precise positioning */
+  right: 30px; /* Move slightly left */
+  margin-left: -20px; /* Adjust position further if needed */
+}
+
+/* Hide menu toggle on larger screens */
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 /* Mobile Profile Styling */
@@ -73,6 +112,36 @@ body {
 
 .mobile-profile {
   display: none;
+}
+
+/* Default: Hide X button */
+.close-btn {
+  display: none; /* Hide by default */
+}
+
+/* Show X button only on mobile */
+@media screen and (max-width: 768px) {
+  .close-btn {
+    display: block; /* Make it visible only on mobile */
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    font-size: 30px;
+    background: none;
+    color: rgb(228, 225, 225);
+    border: none;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column; /* Makes links stack vertically */
+    align-items: center; /* Centers them properly */
+    justify-content: center;
+    padding: 20px;
+    gap: 15px; /* Adds spacing between links */
+  }
 }
 
 /* Responsive Navbar */
@@ -400,6 +469,7 @@ footer {
     width: 100px;
   }
 }
+
 /* ============================
    Mobile Navigation - Left Side 
    ============================ */

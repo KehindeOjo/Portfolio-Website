@@ -13,11 +13,17 @@
   <body>
     <header>
       <nav class="navbar">
+        <button id="close-menu" class="close-btn">✖</button>
         <div class="brand">KEHINDE OJO PORTFOLIO</div>
         <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+
         <ul class="nav-links" id="nav-links">
           <li class="mobile-profile">
-            <img src="./media/kay.jpg" alt="Profile" class="dropdown-profile" />
+            <img
+              src="./media/kay-img.png"
+              alt="Profile"
+              class="dropdown-profile"
+            />
           </li>
           <li><i class="fa-solid fa-house"></i> <a href="#home">Home</a></li>
           <li>
@@ -36,12 +42,12 @@
 
     <section id="home" class="section home">
       <div class="container">
-        <img src="./media/kay-img.png" alt="Profile" class="main-profile" />
+        <img src="./media/kay.jpg" alt="Profile" class="main-profile" />
         <h1>Kehinde Ojo</h1>
         <p>Financial Analyst | Data Analyst</p>
         <div class="social-icons">
           <a href="https://x.com/kehindeojo202" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
+            ><i class="fa-brands fa-x"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/kehindeojo-analyst"
@@ -51,8 +57,8 @@
           <a href="https://github.com/KehindeOjo" target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="mailto:kehindeojo202@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i
+          <a href="https://medium.com/" target="_blank"
+            ><i class="fa-solid fa-m"></i
           ></a>
         </div>
       </div>
@@ -282,21 +288,35 @@
 
     <script>
       const menuToggle = document.getElementById('mobile-menu');
+      const closeMenu = document.getElementById('close-menu');
       const navLinks = document.getElementById('nav-links');
       const sections = document.querySelectorAll('.section');
 
+      // Open menu only on mobile
       menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active'); // Toggles menu visibility
+        navLinks.classList.add('active');
+        document.body.classList.add('no-scroll'); // Prevent scrolling on mobile
         sections.forEach((section) => {
-          section.classList.toggle('nav-open-bg'); // Adds new background class
+          section.classList.add('nav-open-bg'); // Add background overlay
         });
       });
 
+      // Close menu when clicking the X button (mobile only)
+      closeMenu.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        document.body.classList.remove('no-scroll'); // Enable scrolling again
+        sections.forEach((section) => {
+          section.classList.remove('nav-open-bg'); // Reset background effect
+        });
+      });
+
+      // Close menu when clicking a navigation link (mobile only)
       document.querySelectorAll('.nav-links a').forEach((link) => {
         link.addEventListener('click', () => {
           navLinks.classList.remove('active');
+          document.body.classList.remove('no-scroll');
           sections.forEach((section) => {
-            section.classList.remove('nav-open-bg'); // Resets background
+            section.classList.remove('nav-open-bg');
           });
         });
       });
