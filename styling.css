@@ -86,11 +86,11 @@ body {
 /* Mobile Menu - Hidden by default */
 .menu-toggle {
   display: block; /* Ensure it's visible only on mobile */
-  font-size: 28px;
+  font-size: 25px;
   cursor: pointer;
   color: #f1efef;
   position: absolute; /* Ensures precise positioning */
-  right: 35px; /* Move slightly left */
+  right: 38px; /* Move slightly left */
   margin-left: -20px; /* Adjust position further if needed */
 }
 
@@ -124,9 +124,9 @@ body {
   .close-btn {
     display: block; /* Make it visible only on mobile */
     position: absolute;
-    top: 15px;
-    right: 0px;
-    font-size: 30px;
+    top: 18px;
+    right: 10px;
+    font-size: 25px;
     background: none;
     color: rgb(228, 225, 225);
     border: none;
