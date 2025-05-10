@@ -90,7 +90,7 @@ body {
   cursor: pointer;
   color: #f1efef;
   position: absolute; /* Ensures precise positioning */
-  right: 30px; /* Move slightly left */
+  right: 35px; /* Move slightly left */
   margin-left: -20px; /* Adjust position further if needed */
 }
 
