@@ -79,7 +79,7 @@ body {
 }
 
 .nav-links i {
-  font-size: 20px; /* Adjusts icon size */
+  font-size: 15px; /* Adjusts icon size */
   color: white; /* Ensures visibility */
 }
 
@@ -90,7 +90,7 @@ body {
   cursor: pointer;
   color: #f1efef;
   position: absolute; /* Ensures precise positioning */
-  right: 38px; /* Move slightly left */
+  right: 20px; /* Move slightly left */
   margin-left: -20px; /* Adjust position further if needed */
 }
 
@@ -125,7 +125,7 @@ body {
     display: block; /* Make it visible only on mobile */
     position: absolute;
     top: 18px;
-    right: 10px;
+    right: 15px;
     font-size: 25px;
     background: none;
     color: rgb(228, 225, 225);
@@ -163,15 +163,15 @@ body {
 
   @media (max-width: 768px) {
     .navbar .nav-links {
-      width: 180px; /* Smaller width */
+      width: 150px; /* Smaller width */
       height: 85vh; /* Reduce height */
       padding: 15px; /* Adjust padding */
       overflow-y: auto; /* Allows scrolling if needed */
     }
 
     .navbar .nav-links.active {
-      width: 160px; /* Further reduced width */
-      height: 80vh; /* Further reduced height */
+      width: 150px; /* Further reduced width */
+      height: 65vh; /* Further reduced height */
       transition: all 0.3s ease-in-out;
     }
   }
@@ -205,7 +205,7 @@ body {
 
 /* Social Icons */
 .social-icons img {
-  width: 30px;
+  width: 20px;
   margin: 0 10px;
 }
 
@@ -352,7 +352,7 @@ body {
 
 /* Improve Bullet Alignment */
 .resume li {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   margin-bottom: 8px;
   text-align: left; /* Keeps bullet points structured */
@@ -519,23 +519,23 @@ footer {
 
   /* Name & Role Fixes */
   .home h1 {
-    font-size: 35px; /* Increases size */
-    color: rgb(14, 13, 13);
-    margin-bottom: 10px;
+    font-size: 28px; /* Increases size */
+    color: rgb(33, 32, 32);
+    margin-bottom: 0px;
   }
 
   .home p {
-    font-size: 18px;
-    color: rgb(14, 13, 13);
-    margin-bottom: 20px; /* Adds spacing */
+    font-style: italic;
+    font-size: 16px;
+    color: rgb(33, 32, 32);
   }
 
   /* Social Icons Centered */
   .social-icons {
     display: flex;
     justify-content: center; /* Centers icons */
-    gap: 20px; /* Adds space between icons */
-    margin-top: 10px;
+    gap: 10px; /* Adds space between icons */
+    margin-top: 5px;
   }
 
   .social-icons a {

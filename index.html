@@ -44,11 +44,9 @@
       <div class="container">
         <img src="./media/kay.jpg" alt="Profile" class="main-profile" />
         <h1>Kehinde Ojo</h1>
-        <p>Financial Analyst | Data Analyst</p>
+        <h3>Financial Analyst | Data Analyst</h3>
+        <p>Bridging Numbers and Strategy.</p>
         <div class="social-icons">
-          <a href="https://x.com/kehindeojo202" target="_blank"
-            ><i class="fa-brands fa-x"></i
-          ></a>
           <a
             href="https://www.linkedin.com/in/kehindeojo-analyst"
             target="_blank"
@@ -56,9 +54,6 @@
           ></a>
           <a href="https://github.com/KehindeOjo" target="_blank"
             ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://medium.com/" target="_blank"
-            ><i class="fa-solid fa-m"></i
           ></a>
         </div>
       </div>
@@ -68,24 +63,34 @@
       <div class="container">
         <h2>About Me</h2>
         <p>
-          Hello! I’m Kehinde Ojo, a Data Analyst with a strong foundation in
-          finance and accounting, specializing in turning complex data into
-          clear, actionable insights. With expertise in SQL, Python, Excel, and
-          Power BI, I focus on data visualization, financial modeling, and
-          business intelligence to optimize processes and uncover trends. My
-          background in financial analysis has equipped me with the ability to
-          connect business challenges to data-driven solutions, helping
-          organizations make informed decisions. I’ve successfully applied my
-          skills to various analytics projects, ranging from financial
-          transaction analysis to business performance dashboards, demonstrating
-          my ability to extract meaningful insights from data. Beyond analytics,
-          I enjoy exploring finance-related tech innovations, crafting
-          customized Asooke designs, and preparing for academic milestones. My
-          mission is clear: use data to tell compelling stories, optimize
-          business strategies, and create impactful solutions. Let’s Connect! If
-          you’re looking for a data-driven problem solver with a finance edge,
-          feel free to reach out via my Contact page or connect with me on
-          LinkedIn.
+          Hello! I’m Kehinde Ojo, a data analyst with a solid background in
+          finance and accounting, dedicated to transforming complex data into
+          clear, actionable insights. Leveraging tools like SQL, Python, Excel,
+          and Power BI, I specialize in data visualization, financial modeling,
+          and business intelligence to uncover trends, optimize processes, and
+          support strategic decision-making.
+        </p>
+        <p>
+          My foundation in financial analysis gives me a unique edge enabling me
+          to connect business challenges to data-driven solutions. I’ve
+          successfully led and contributed to analytics projects ranging from
+          financial transaction deep-dives to dynamic performance dashboards,
+          all focused on extracting insights that drive real impact.
+        </p>
+        <p>
+          Beyond analytics, I have a passion for finance focused tech
+          innovations and creative entrepreneurship particularly crafting
+          customized Asooke designs. I’m also currently advancing my academic
+          goals and expanding my project portfolio.
+        </p>
+        <p>
+          My mission is simple: turn data into compelling stories and powerful
+          strategies that move businesses forward.
+        </p>
+        <p>
+          Let’s connect! If you’re looking for a data-savvy problem solver with
+          a finance edge, feel free to reach out via my Contact page or connect
+          with me on LinkedIn.
         </p>
         <div class="skills-list">
           <h3>Key Skills:</h3>
@@ -153,6 +158,27 @@
               Power BI dashboard.
             </p>
           </div>
+
+          <div class="project-card">
+            <a
+              href="https://github.com/KehindeOjo/HR-Attrition"
+              target="_blank"
+            >
+              <img
+                src="./media/student_habits_performance_dashboard.png"
+                alt="Student Habits vs Academic Performance"
+              />
+              <h3>Student Habits vs Academic Performance</h3>
+            </a>
+            <p>
+              This dashboard project explores the relationship between students'
+              lifestyle habits and their academic performance. By analyzing
+              factors such as study hours, sleep duration, attendance, exercise,
+              diet quality, and mental health, the dashboard reveals insights
+              into how these variables influence exam scores. .
+            </p>
+          </div>
+
           <div class="project-card">
             <a
               href="https://github.com/KehindeOjo/Inventory-Tracker"
@@ -258,7 +284,7 @@
             optimizing stock usage.
           </li>
         </ul>
-        <a href="./assets/Kehinde_Ojo_CV.pdf" download class="btn"
+        <a href="./assets/Kehinde_Ojo_CV.pdf.pdf" download class="btn"
           >Download My Resume</a
         >
       </div>
@@ -290,35 +316,17 @@
       const menuToggle = document.getElementById('mobile-menu');
       const closeMenu = document.getElementById('close-menu');
       const navLinks = document.getElementById('nav-links');
-      const sections = document.querySelectorAll('.section');
 
-      // Open menu only on mobile
       menuToggle.addEventListener('click', () => {
-        navLinks.classList.add('active');
-        document.body.classList.add('no-scroll'); // Prevent scrolling on mobile
-        sections.forEach((section) => {
-          section.classList.add('nav-open-bg'); // Add background overlay
-        });
+        navLinks.classList.add('active'); // Opens menu
+        menuToggle.style.display = 'none'; // Hide menu button
+        closeMenu.style.display = 'block'; // Show close button
       });
 
-      // Close menu when clicking the X button (mobile only)
       closeMenu.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        document.body.classList.remove('no-scroll'); // Enable scrolling again
-        sections.forEach((section) => {
-          section.classList.remove('nav-open-bg'); // Reset background effect
-        });
-      });
-
-      // Close menu when clicking a navigation link (mobile only)
-      document.querySelectorAll('.nav-links a').forEach((link) => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('active');
-          document.body.classList.remove('no-scroll');
-          sections.forEach((section) => {
-            section.classList.remove('nav-open-bg');
-          });
-        });
+        navLinks.classList.remove('active'); // Closes menu
+        closeMenu.style.display = 'none'; // Hide close button
+        menuToggle.style.display = 'block'; // Show menu button again
       });
     </script>
   </body>
