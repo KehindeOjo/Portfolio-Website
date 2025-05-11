@@ -124,8 +124,8 @@ body {
   .close-btn {
     display: block; /* Make it visible only on mobile */
     position: absolute;
-    top: 18px;
-    right: 15px;
+    top: 8px;
+    right: 20px;
     font-size: 25px;
     background: none;
     color: rgb(228, 225, 225);
