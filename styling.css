@@ -202,26 +202,24 @@ body {
   border-radius: 50%;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  #home,
+  #about {
+    margin: 0; /* Completely remove extra margins */
+    padding: 10px 5px; /* Reduce padding */
+  }
 
-/* Social Icons */
-.social-icons img {
-  width: 20px;
-  margin: 0 10px;
-}
+  .container {
+    max-width: 100%; /* Ensure it fits well on smaller screens */
+    padding: 5px; /* Reduce empty space */
+  }
 
-.social-icons a {
-  font-size: 25px; /* Makes the icons larger */
-  margin: 10px; /* Adds space around each icon */
-  display: inline-block; /* Prevents unwanted spacing issues */
-  color: #002244;
-}
-
-.social-icons a i {
-  transition: transform 0.3s ease; /* Adds a smooth hover effect */
-}
-
-.social-icons a:hover i {
-  transform: scale(1.2); /* Slightly enlarges icon when hovered */
+  img.main-profile {
+    width: 60%; /* Adjust profile image size */
+    height: auto;
+    display: block;
+    margin: auto;
+  }
 }
 
 /* About me skill session */
@@ -314,6 +312,22 @@ body {
 .project-card a:hover img {
   transform: scale(0.95); /* Slight zoom out */
 }
+/* Project Tools used */
+.tools {
+  display: flex;
+  gap: 10px;
+}
+
+.tool-button {
+  background-color: #002244;
+  color: #f0f8ff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
 
 /* Resume Section */
 .resume {
@@ -399,6 +413,26 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
+/* Social Icons */
+.social-icons img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.social-icons a {
+  font-size: 25px; /* Makes the icons larger */
+  margin: 10px; /* Adds space around each icon */
+  display: inline-block; /* Prevents unwanted spacing issues */
+  color: #002244;
+}
+
+.social-icons a i {
+  transition: transform 0.3s ease; /* Adds a smooth hover effect */
+}
+
+.social-icons a:hover i {
+  transform: scale(1.2); /* Slightly enlarges icon when hovered */
+}
 
 .contact input,
 .contact textarea {
@@ -416,6 +450,7 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Footer Styling */
@@ -441,7 +476,7 @@ footer {
 }
 
 .back-to-top:hover {
-  background: #0073e6;
+  background: #002244;
 }
 
 /* Additional Mobile Adjustments */
