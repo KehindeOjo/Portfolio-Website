@@ -213,9 +213,10 @@ body {
     max-width: 100%; /* Ensure it fits well on smaller screens */
     padding: 5px; /* Reduce empty space */
   }
-
+  /* Adjust profile image size */
   img.main-profile {
-    width: 60%; /* Adjust profile image size */
+    border-radius: 20%;
+    width: 50%;
     height: auto;
     display: block;
     margin: auto;
