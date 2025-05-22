@@ -232,9 +232,9 @@ body {
 .about p {
   text-align: justify; /* Makes text evenly aligned on both left & right */
   font-size: 18px; /* Keeps font readable */
-  line-height: 1.8; /* Adds proper spacing between lines */
+  line-height: 1.5; /* Adds proper spacing between lines */
   max-width: 800px; /* Restricts width for cleaner structure */
-  margin: 0 auto 20px; /* Centers the block and adds space below */
+  margin: 0 auto 10px; /* Centers the block and adds space below */
 }
 
 .skills-list h1 {
