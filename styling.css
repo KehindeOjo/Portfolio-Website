@@ -206,7 +206,7 @@ body {
   #home,
   #about {
     margin: 0; /* Completely remove extra margins */
-    padding: 5px 5px; /* Reduce padding */
+    padding: 10px 5px; /* Reduce padding */
   }
 
   .container {
