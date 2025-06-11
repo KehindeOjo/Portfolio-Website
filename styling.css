@@ -232,19 +232,9 @@ body {
 .about p {
   text-align: justify; /* Makes text evenly aligned on both left & right */
   font-size: 16.5px; /* Keeps font readable */
-  line-height: 1.5; /* Adds proper spacing between lines */
+  line-height: 1.7; /* Adds proper spacing between lines */
   max-width: 800px; /* Restricts width for cleaner structure */
   margin: 0 auto 10px; /* Centers the block and adds space below */
-}
-
-.about ul {
-  list-style-type: disc; /* Adds bullet points */
-  padding-left: 20px; /* Indents list properly */
-}
-
-.about li {
-  font-size: 16.5px;
-  margin-bottom: 5px;
 }
 
 .skills-list h1 {
