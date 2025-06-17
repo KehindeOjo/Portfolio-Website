@@ -459,6 +459,14 @@ body {
   line-height: 1.6;
 }
 
+.project-card a {
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
 .tools {
   margin-top: 1rem;
 }
