@@ -104,7 +104,6 @@ body {
 .moving-glow-text {
   font-size: 28px;
   font-weight: bold;
-  text-transform: uppercase;
   background: linear-gradient(90deg, #ffffff, #ffd700, #ffffff);
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -255,7 +254,7 @@ body {
     max-width: 60%;
     height: auto;
     display: block;
-    margin: 20px auto 1rem auto; /* Top, Right, Bottom, Left */
+    margin: 5px auto 1rem auto; /* Top, Right, Bottom, Left */
   }
 
   .container {
@@ -354,7 +353,7 @@ body {
 
 /* Certifications Section */
 #certifications {
-  padding: 60px 20px;
+  padding: 20px 20px;
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -459,8 +458,7 @@ body {
 }
 
 #achievements {
-  padding: 2rem 1rem;
-
+  padding: 20px 20px;
   border-radius: 1rem;
   margin-top: 0rem;
 }
