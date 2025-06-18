@@ -218,7 +218,7 @@ body {
 
 @media (max-width: 768px) {
   .home {
-    padding: 100px 0.5rem 1rem 0.5rem; /* TOP, Right, Bottom, Left */
+    padding: 1rem 0.5rem 1rem 0.5rem;
     margin: 0 !important;
   }
 
@@ -226,7 +226,7 @@ body {
     max-width: 60%;
     height: auto;
     display: block;
-    margin: 0 auto 1rem auto;
+    margin: 60px auto 1rem auto; /* Top, Right, Bottom, Left */
   }
 
   .container {
