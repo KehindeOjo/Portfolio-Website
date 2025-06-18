@@ -255,7 +255,7 @@ body {
     max-width: 60%;
     height: auto;
     display: block;
-    margin: 60px auto 1rem auto; /* Top, Right, Bottom, Left */
+    margin: 20px auto 1rem auto; /* Top, Right, Bottom, Left */
   }
 
   .container {
