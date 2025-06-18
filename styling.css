@@ -218,7 +218,7 @@ body {
 
 @media (max-width: 768px) {
   .home {
-    padding: 1rem 0.5rem;
+    padding: 100px 0.5rem 1rem 0.5rem; /* TOP, Right, Bottom, Left */
     margin: 0 !important;
   }
 
