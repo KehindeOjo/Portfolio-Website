@@ -127,11 +127,6 @@ body {
   }
 }
 
-.moving-text:hover {
-  animation-play-state: paused;
-  cursor: pointer;
-}
-
 /* Mobile Profile Styling */
 .dropdown-profile {
   width: 60px;
