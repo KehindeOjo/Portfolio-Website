@@ -100,6 +100,37 @@ body {
     display: none;
   }
 }
+.moving-text {
+  position: relative;
+  animation: floatAround 8s infinite ease-in-out;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Keyframes for smooth random motion */
+@keyframes floatAround {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -15px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(15px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.moving-text:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
 
 /* Mobile Profile Styling */
 .dropdown-profile {
@@ -242,6 +273,46 @@ body {
 }
 
 /* About me skill session */
+
+/*.home {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url('./media/try_this.jpg') no-repeat center center;
+  background-size: cover;
+}
+*/
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollLeft 8s linear infinite;
+  font-size: 28px;
+  color: #002244;
+  font-weight: bold;
+}
+
+/* Keyframes to scroll left */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee-text:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
 .about h1 {
   font-size: 24px; /* Increases size */
   color: #002244;
@@ -287,6 +358,13 @@ body {
 #certifications {
   padding: 60px 20px;
   animation: fadeIn 1s ease-in-out;
+}
+
+#certifications h1 {
+  font-size: 22px;
+  color: #002244;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* Section Title */
@@ -389,7 +467,7 @@ body {
   margin-top: 0rem;
 }
 
-#achievements h2 {
+#achievements h1 {
   font-size: 22px;
   color: #002244;
   margin-bottom: 1.5rem;
@@ -795,31 +873,4 @@ footer {
   .navbar .nav-links {
     background: #002244;
   }
-}
-
-/* Global Background */
-/*body,
-.home,
-.about,
-.projects,
-.resume,
-.contact,
-footer {
-  background: #f0f8ff !important; /* Light blue background */
- /* color: #333; /* Ensure readable text */
-/*}
-
-/* Mobile Adjustments */
-/*@media (max-width: 768px) {
-  .home,
-  .about,
-  .projects,
-  .resume,
-  .contact {
-    background: #f0f8ff !important; /* Keep same light blue color */
-  /*}
-
- /* .navbar .nav-links {
-    background: #002244; /* Keep navbar distinct */
-  /*}
 }
