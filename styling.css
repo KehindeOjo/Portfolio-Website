@@ -66,10 +66,17 @@ body {
   gap: 20px;
 }
 
-.navbar .nav-links li a {
+.nav-links a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #80dfff;
+  text-shadow: 0 0 5px #80dfff;
+  text-decoration: underline;
 }
 
 .nav-links li {
