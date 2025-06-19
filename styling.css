@@ -271,15 +271,15 @@ body {
 
 /* About me skill session */
 
-/*.home {
+.home {
   background: linear-gradient(
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
     ),
-    url('./media/try_this.jpg') no-repeat center center;
+    url('./media/b_ground.jpg') no-repeat center center;
   background-size: cover;
 }
-*/
+
 .marquee-container {
   overflow: hidden;
   position: relative;
@@ -814,18 +814,23 @@ footer {
    Home Section - Center Image & Text Properly
    ============================ */
 @media (max-width: 768px) {
-  /* Clean hero section */
+  /* Clean hero section with background */
   .home {
-    background: #f0f8ff !important;
+    background: 
+      linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+      url('./media/b_ground.jpg') no-repeat center center !important;
+    background-size: cover;
     padding: 1rem 1rem;
     margin: 0 !important;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Prevents forced full height */
+    justify-content: flex-start;
     text-align: center;
-    min-height: auto; /* Removes 100vh issue */
+    min-height: auto;
   }
+}
+
 
   .main-profile {
     width: 150px;
