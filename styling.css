@@ -365,8 +365,25 @@ body {
 
 .skills-list h1 {
   font-size: 22px;
-  margin-bottom: 10px;
+  text-align: center;
   color: #002244;
+  animation: flashGlow 1.5s ease-in-out infinite;
+}
+
+/* Flash Glow Keyframes */
+@keyframes flashGlow {
+  0% {
+    text-shadow: 0 0 0px #4db8ff;
+  }
+  30% {
+    text-shadow: 0 0 10px #4db8ff, 0 0 20px #4db8ff;
+  }
+  60% {
+    text-shadow: 0 0 0px #4db8ff;
+  }
+  100% {
+    text-shadow: 0 0 10px #4db8ff, 0 0 20px #4db8ff;
+  }
 }
 
 .skills-list {
@@ -541,6 +558,16 @@ body {
 }
 
 /* Projects Section */
+
+.projects {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url('./media/b_ground.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 2rem 1rem;
+}
 
 .projects h1 {
   font-size: 22px;
@@ -873,6 +900,15 @@ footer {
   .logo {
     width: 30px;
     height: 30px;
+  }
+  .projects {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      url('./media/b_ground.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 1.5rem 1rem;
   }
 }
 
