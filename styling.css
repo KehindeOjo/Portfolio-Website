@@ -246,6 +246,27 @@ body {
   margin-bottom: -1px;
 }
 
+.section h1 i {
+  color: #002244; /* Deep navy blue for better contrast */
+  margin-right: 8px;
+  transition: color 0.3s ease-in-out;
+}
+.section h1:hover {
+  color: #007acc; /* Light blue on hover */
+}
+
+.section h1:hover i {
+  color: #007acc; /* Icon changes too */
+}
+.section-heading-text {
+  transition: color 0.3s ease-in-out;
+}
+
+.section h1:hover .section-heading-text {
+  color: #007acc;
+  cursor: pointer;
+}
+
 /* Home Section */
 .home {
   background: #f0f8ff;
