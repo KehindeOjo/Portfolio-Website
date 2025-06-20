@@ -102,33 +102,24 @@
         </div>
 
         <p>
-          Data is more than just numbers. It reveals the story behind every smart business decision. 
-          I thrive on uncovering insights that lead to smarter strategies and measurable impact.
+          Data tells the story behind every smart decision. I uncover those insights.
         </p>
         <p>
-          I’m Kehinde Ojo, a Data and Financial Analyst based in Lagos, 
-            Nigeria, with a strong foundation in finance and accounting. 
-            I specialize in turning raw data into actionable insights using tools like
-           Excel, SQL, Power BI, Python (Jupyter), and QuickBooks
-           to bridge the gap between finance, data, and technology.
+          I’m <strong>Kehinde Ojo</strong>, a Data & Financial Analyst based in Lagos, with a strong foundation in finance and accounting. 
+          I bridge the gap between numbers and strategy using tools like <strong>Excel, SQL, Power BI, Python</strong>, and <strong>QuickBooks</strong>.
         </p>
         <p>
-          I help organizations uncover trends and performance gaps,
-          Monitor KPIs and streamline reporting, and Make confident, data-driven decisions. 
+          My work focuses on uncovering trends, tracking KPIs, and driving data-led decisions through financial modeling, 
+          visualization, and business intelligence. 
         </p>
         <p>
-          My expertise spans financial modeling, data visualization, and business intelligence, 
-          enabling me to solve complex business challenges with clear, data-led solutions. 
-          From analyzing financial transactions to building dynamic dashboards, I lead projects that turn data into strategic value.
+          From analyzing transactions to building dashboards, I turn complex data into clarity that powers business growth.
         </p>
         <p>
-          My mission is simple: To connect finance, analytics, and AI, transforming complex data into clarity that drives business growth.
+          I'm open to freelance, full-time, or collaborative roles in analytics, finance, or strategy.
         </p>
         <p>
-          I’m open to collaboration, freelance projects, or full-time roles focused on analytics, finance, or strategy.
-        </p>
-        <p>
-          Feel free to reach out via the Contact page or connect with me on LinkedIn.
+          👉 Connect with me via the Contact page or on LinkedIn.
         </p>
 
         <div class="skills-list">
@@ -522,17 +513,27 @@
           ></a>
         </div>
 
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="document.getElementById('form-success').style.display = 'block';">
+  <!-- Netlify Hidden Setup -->
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden>
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
+
+  <!-- Form Fields -->
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <!-- Submit Button -->
+  <button type="submit">Send Message</button>
+
+  <!-- Success Message -->
+  <div id="form-success" style="display: none; color: green; margin-top: 10px;">
+    ✅ Message sent successfully! I'll get back to you shortly.
+  </div>
+</form>
+
       </div>
     </section>
 
