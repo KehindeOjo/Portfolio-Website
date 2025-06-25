@@ -666,6 +666,7 @@ body {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
+  text-align: left;
 }
 
 .project-card a {
