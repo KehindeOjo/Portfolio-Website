@@ -641,6 +641,26 @@ body {
   font-weight: 600;
   color: #002244;
 }
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.project-card {
+  animation: breathe 5s ease-in-out infinite;
+  padding: 20px;
+  margin: 5px 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
 
 .project-card p {
   font-size: 0.95rem;
