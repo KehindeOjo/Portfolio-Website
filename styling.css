@@ -731,6 +731,12 @@ body {
   /* Adds slight spacing */
 }
 
+.resume p {
+  margin-top: -5px; /* Moves date closer to job role */
+  font-size: 15px;
+  font-weight: normal;
+}
+
 /* Center Bullet Points */
 .resume ul {
   display: block;
