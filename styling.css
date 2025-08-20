@@ -725,6 +725,7 @@ body {
 .resume h3 {
   display: block; /* Keeps job role above the year */
   font-weight: bold;
+  text-align: center;
   color: #002244;
   margin-bottom: 5px;
   font-style: normal;
@@ -735,6 +736,7 @@ body {
   margin-top: -5px; /* Moves date closer to job role */
   font-size: 15px;
   font-weight: normal;
+  text-align: center;
 }
 
 /* Center Bullet Points */
