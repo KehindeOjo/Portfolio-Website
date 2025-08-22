@@ -275,19 +275,6 @@ body {
   text-align: center;
 }
 
-.home h1 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #002244;
-}
-
-.home h3 {
-  font-size: 22px;
-  font-weight: 500;
-  color: #333;
-  margin-top: 0.5rem;
-}
-
 /* Profile Image */
 .main-profile {
   max-width: 150px;
@@ -973,14 +960,19 @@ footer {
 }
 
 .home h1 {
-  font-size: 26px;
+  font-size: 28px;
   color: #002244;
   margin-bottom: 0.5rem;
 }
 
-.home h3,
+.home h3 {
+  font-size: 18px;
+
+  margin-top: 0.5rem;
+}
+
 .home p {
-  font-size: 16px;
+  font-size: 15px;
   color: #333;
   margin: 0.3rem 0;
 }
