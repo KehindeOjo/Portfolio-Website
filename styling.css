@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
   line-height: 1.6;
   background: #f0f8ff;
   color: #333;
@@ -373,7 +373,7 @@ body {
 .about p {
   text-align: justify; /* Makes text evenly aligned on both left & right */
   font-size: 16.5px; /* Keeps font readable */
-  line-height: 1.7; /* Adds proper spacing between lines */
+  line-height: 1.6; /* Adds proper spacing between lines */
   max-width: 800px; /* Restricts width for cleaner structure */
   margin: 0 auto 10px; /* Centers the block and adds space below */
 }
