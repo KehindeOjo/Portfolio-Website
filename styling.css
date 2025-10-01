@@ -382,7 +382,6 @@ body {
   font-size: 22px;
   text-align: center;
   color: #002244;
-  animation: flashGlow 1.5s ease-in-out infinite;
 }
 
 /* Flash Glow Keyframes */
