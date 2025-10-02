@@ -540,17 +540,23 @@ body {
   background-color: #ffffff;
   border-left: 5px solid #002244cc;
   padding: 25px;
-  margin: 20px auto;
+  margin: 15px auto;
   max-width: 700px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
+  border-radius: 10px; /* softer corners */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.edu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* subtle hover effect */
+}
+
 .edu-item h3 {
-  font-size: 18px;
+  font-size: 20px; /* slightly larger to stand out as the degree */
   color: #002244;
-  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .edu-item p {
