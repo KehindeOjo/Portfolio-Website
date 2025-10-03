@@ -119,6 +119,13 @@ body {
   height: 40px;
   border-radius: 50%; /* Optional */
 }
+.glow-wrapper {
+  position: relative;
+  width: 300px; /* or whatever fits nicely between logo and nav */
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
 
 /* === Combined Glowing + Moving Text === */
 .moving-glow-text {
@@ -128,22 +135,24 @@ body {
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: scrollGlow 12s linear infinite;
   white-space: nowrap;
   display: inline-block;
-  position: relative;
+  position: absolute; /* changed from relative */
+  left: 100%; /* start off-screen inside wrapper */
+  top: 0;
+  animation: scrollGlow 12s linear infinite;
+  pointer-events: none;
   z-index: 1;
-  pointer-events: none; /* ensures it doesn't block click */
 }
 
 /* Animation: glowing scroll */
 @keyframes scrollGlow {
   0% {
-    transform: translateX(100%);
+    left: 100%;
     background-position: 200% center;
   }
   100% {
-    transform: translateX(-100%);
+    left: -100%;
     background-position: -200% center;
   }
 }

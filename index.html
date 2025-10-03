@@ -557,21 +557,31 @@
     </footer>
 
     <script>
-      const menuToggle = document.getElementById('mobile-menu');
-      const closeMenu = document.getElementById('close-menu');
-      const navLinks = document.getElementById('nav-links');
+  const menuToggle = document.getElementById('mobile-menu'); // ☰
+  const closeMenu = document.getElementById('close-menu');   // ✖
+  const navLinks = document.getElementById('nav-links');
 
-      menuToggle.addEventListener('click', () => {
-        navLinks.classList.add('active'); // Opens menu
-        menuToggle.style.display = 'none'; // Hide menu button
-        closeMenu.style.display = 'block'; // Show close button
-      });
+  // Ensure correct state on page load
+  window.addEventListener('load', () => {
+    navLinks.classList.remove('active');        // Hide nav links
+    closeMenu.style.display = 'none';           // Hide close icon
+    menuToggle.style.display = 'block';         // Show menu icon
+  });
 
-      closeMenu.addEventListener('click', () => {
-        navLinks.classList.remove('active'); // Closes menu
-        closeMenu.style.display = 'none'; // Hide close button
-        menuToggle.style.display = 'block'; // Show menu button again
-      });
-    </script>
+  // Open menu
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.add('active');           // Show nav links
+    menuToggle.style.display = 'none';          // Hide menu icon
+    closeMenu.style.display = 'block';          // Show close icon
+  });
+
+  // Close menu
+  closeMenu.addEventListener('click', () => {
+    navLinks.classList.remove('active');        // Hide nav links
+    closeMenu.style.display = 'none';           // Hide close icon
+    menuToggle.style.display = 'block';         // Show menu icon
+  });
+</script>
+
   </body>
 </html>
