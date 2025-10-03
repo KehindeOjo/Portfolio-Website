@@ -121,7 +121,7 @@ body {
 }
 .glow-wrapper {
   position: relative;
-  width: 300px; /* or whatever fits nicely between logo and nav */
+  width: 200px; /* or whatever fits nicely between logo and nav */
   height: 40px;
   overflow: hidden;
   flex-shrink: 0;
