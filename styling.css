@@ -608,7 +608,7 @@ body {
   color: #4b5563;
   font-size: 0.95rem;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
 }
 .achievement-item ul {
   display: block;
@@ -618,7 +618,7 @@ body {
   color: #4b5563;
   font-size: 0.95rem;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
 }
 .achievement-item a {
   color: #002244;
