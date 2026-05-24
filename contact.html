@@ -227,16 +227,23 @@
         <div class="contact-form-card fade-up delay-2">
           <h3>Send Me a Message</h3>
           <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
             id="contactForm"
+            action="https://formspree.io/f/mbdbargg"
+            method="POST"
           >
-            <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-              <label>Don't fill this out: <input name="bot-field" /></label>
-            </p>
+            <!-- Formspree: sets Reply-To header to sender's email -->
+            <input type="hidden" name="_replyto" id="replyto" />
+
+            <!-- Formspree: custom subject line in your Gmail -->
+            <input
+              type="hidden"
+              name="_subject"
+              id="emailSubject"
+              value="New Portfolio Message"
+            />
+
+            <!-- Honeypot spam trap -->
+            <input type="text" name="_gotcha" style="display: none" />
 
             <div class="form-row">
               <div class="form-group">
@@ -286,17 +293,45 @@
               ></textarea>
             </div>
 
+            <!-- Submit button — shows spinner while sending -->
             <button
               type="submit"
               class="btn-primary"
+              id="submitBtn"
               style="width: 100%; justify-content: center; padding: 0.9rem"
             >
-              <i class="fa-solid fa-paper-plane"></i> Send Message
+              <i class="fa-solid fa-paper-plane" id="btnIcon"></i>
+              <span id="btnText">Send Message</span>
             </button>
 
+            <!-- Success message -->
             <div class="form-success" id="formSuccess">
-              <i class="fa-solid fa-circle-check"></i> Message sent
-              successfully! I'll get back to you within 24 hours.
+              <i class="fa-solid fa-circle-check"></i> Message sent! I'll get
+              back to you within 24 hours.
+            </div>
+
+            <!-- Error fallback -->
+            <div
+              id="formError"
+              style="
+                display: none;
+                background: #fdecea;
+                border: 1px solid #f5c6cb;
+                color: #c0392b;
+                padding: 0.85rem 1rem;
+                border-radius: 8px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                margin-top: 1rem;
+              "
+            >
+              <i class="fa-solid fa-circle-exclamation"></i> Something went
+              wrong. Please email me directly at
+              <a
+                href="mailto:kehindeojo202@gmail.com"
+                style="color: #c0392b; font-weight: 700"
+                >kehindeojo202@gmail.com</a
+              >
             </div>
           </form>
         </div>
@@ -338,16 +373,66 @@
 
     <script src="script.js"></script>
     <script>
-      // Contact form success handler
       const form = document.getElementById('contactForm');
+
       if (form) {
-        form.addEventListener('submit', function (e) {
-          // For Netlify this submits normally; this handles local preview UX
-          const success = document.getElementById('formSuccess');
-          if (success) {
-            setTimeout(() => {
-              success.style.display = 'block';
-            }, 300);
+        const submitBtn = document.getElementById('submitBtn');
+        const btnIcon = document.getElementById('btnIcon');
+        const btnText = document.getElementById('btnText');
+        const successBox = document.getElementById('formSuccess');
+        const errorBox = document.getElementById('formError');
+        const emailInput = document.getElementById('email');
+        const subjectSel = document.getElementById('subject');
+        const replyTo = document.getElementById('replyto');
+        const hiddenSubj = document.getElementById('emailSubject');
+
+        // Mirror sender email into _replyto so Reply-To header is set
+        emailInput.addEventListener('input', () => {
+          replyTo.value = emailInput.value;
+        });
+
+        // Build descriptive Gmail subject from dropdown selection
+        subjectSel.addEventListener('change', () => {
+          hiddenSubj.value = 'Portfolio Enquiry: ' + subjectSel.value;
+        });
+
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+
+          // Button loading state
+          submitBtn.disabled = true;
+          btnIcon.className = 'fa-solid fa-spinner fa-spin';
+          btnText.textContent = 'Sending…';
+          successBox.style.display = 'none';
+          errorBox.style.display = 'none';
+
+          const formData = new FormData(form);
+
+          try {
+            const response = await fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: { Accept: 'application/json' },
+            });
+
+            if (response.ok) {
+              successBox.style.display = 'block';
+              form.reset();
+              replyTo.value = '';
+              hiddenSubj.value = 'New Portfolio Message';
+              successBox.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+              });
+            } else {
+              errorBox.style.display = 'block';
+            }
+          } catch (err) {
+            errorBox.style.display = 'block';
+          } finally {
+            submitBtn.disabled = false;
+            btnIcon.className = 'fa-solid fa-paper-plane';
+            btnText.textContent = 'Send Message';
           }
         });
       }
