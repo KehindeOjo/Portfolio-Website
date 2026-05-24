@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Kehinde Ojo | Financial & Data Analyst</title>
+    <meta
+      name="description"
+      content="Explore Kehinde Ojo's data and financial analysis projects — dashboards, automation, financial modeling, HR analytics, and more."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/291f98cb3f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-brand">
+        <img
+          src="./media/OJO LOGO-NO BACKGROUND.png"
+          alt="KO Logo"
+          class="brand-logo"
+          onerror="this.style.display = 'none'"
+        />
+        <span class="brand-name">Kehinde <span>Ojo</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="./assets/Kehinde_Ojo_Analyst_CV.pdf" download class="nav-cta"
+            ><i class="fa-solid fa-download"></i> Resume</a
+          >
+        </li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ====== PROJECTS HERO ====== -->
+    <section class="projects-hero">
+      <div style="max-width: 1200px; margin: 0 auto">
+        <div class="section-label" style="color: var(--gold)">Portfolio</div>
+        <h1
+          class="hero-name"
+          style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 1rem"
+        >
+          My Projects
+        </h1>
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 1.05rem;
+            max-width: 560px;
+            line-height: 1.75;
+          "
+        >
+          End-to-end data and financial analytics projects, ranging from
+          business intelligence dashboards to automated workflows and in-depth
+          analytical solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS GRID ====== -->
+    <section class="section" style="background: var(--light-bg)">
+      <div class="section-inner">
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="powerbi">Power BI</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="excel">Excel</button>
+          <button class="filter-btn" data-filter="sql">SQL</button>
+          <button class="filter-btn" data-filter="automation">
+            Automation
+          </button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Invoice Workflow -->
+          <div class="project-card fade-up" data-tags="automation excel">
+            <div class="project-img">
+              <img
+                src="./media/Invoice Workflow detailed screenshot.png"
+                alt="Invoice Workflow Automation"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KehindeOjo/Invoice-Approval-Workflow"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Invoice Workflow Automation</h3>
+              <p>
+                Designed an automated invoice submission and approval workflow
+                using Google Forms, Google Sheets, and Apps Script. The solution
+                centralized submissions, enabled real-time tracking, and
+                streamlined approvals, reducing manual effort and improving
+                operational efficiency.
+              </p>
+              <div class="project-tools">
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-wpforms"></i> Google Forms</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-table"></i> Google Sheets</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-brands fa-google"></i> Apps Script</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Financial Reconciliation -->
+          <div class="project-card fade-up delay-1" data-tags="excel">
+            <div class="project-img">
+              <img
+                src="./media/Financial Data Reconciliation Workflow.png"
+                alt="Financial Data Reconciliation"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KehindeOjo/Financial-Data-Reconciliation-Workflow"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Financial Data Reconciliation Workflow</h3>
+              <p>
+                Designed a structured reconciliation system that centralized
+                collections, transfers, and adjustments into a single workflow.
+                The solution enabled clear scenario analysis, highlighted
+                variances and outstanding balances, and improved transparency
+                and accuracy in financial reporting.
+              </p>
+              <div class="project-tools">
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-file-excel"></i> Excel</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Profitability Analysis -->
+          <div class="project-card fade-up delay-2" data-tags="python powerbi">
+            <div class="project-img">
+              <img
+                src="./media/profitability_and_financial_health_dashboard.png"
+                alt="Profitability Financial Health"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KehindeOjo/Profitability-Financial-Health-Analysis"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Profitability & Financial Health Analysis</h3>
+              <p>
+                Analyzed a service-based company’s financial data to uncover
+                trends in revenue, profit margins, and departmental expenses.
+                Leveraged Python for exploratory analysis and Power BI to build
+                interactive dashboards that highlight key cost drivers and
+                profitability insights, supporting more informed strategic
+                decisions.
+              </p>
+              <div class="project-tools">
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-terminal"></i> Jupyter</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-brands fa-python"></i> Python</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-chart-bar"></i> Power BI</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Estate Financial Tracker -->
+          <div class="project-card fade-up" data-tags="excel sql powerbi">
+            <div class="project-img">
+              <img
+                src="./media/Estate Financial Transaction Dashboard.png"
+                alt="Estate Financial Tracker"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KehindeOjo/Estate-Financial-Transactions"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Estate Financial Tracker</h3>
+              <p>
+                Designed a financial tracking system for a residential estate,
+                analyzing revenue flow, top-paying units, and income
+                distribution across billing categories. Built an interactive
+                Power BI dashboard using SQL and Excel, enabling stakeholders to
+                filter insights by block, bill type, and time period for better
+                financial visibility and decision-making.
+              </p>
+              <div class="project-tools">
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-file-excel"></i> Excel</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-database"></i> SQL</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-chart-bar"></i> Power BI</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: HR Attrition -->
+          <div
+            class="project-card fade-up delay-1"
+            data-tags="excel sql powerbi"
+          >
+            <div class="project-img">
+              <img
+                src="./media/HR Atrrition Dasboard.png"
+                alt="HR Attrition Dashboard"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KehindeOjo/HR-Attrition"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>HR Attrition Dashboard</h3>
+              <p>
+                Analyzed HR datasets to identify key drivers of employee
+                attrition. Built an interactive Power BI dashboard powered by
+                SQL and Excel, highlighting risk factors such as job role,
+                tenure, and work-life balance to support data-driven employee
+                retention strategies.
+              </p>
+              <div class="project-tools">
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-file-excel"></i> Excel</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-database"></i> SQL</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-chart-bar"></i> Power BI</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Student Habits -->
+          <div class="project-card fade-up delay-2" data-tags="excel powerbi">
+            <div class="project-img">
+              <img
+                src="./media/student_habits_performance_dashboard.png"
+                alt="Student Habits Dashboard"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KehindeOjo/Student-Habits-vs-Academic-Performance"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Student Habits vs Academic Performance</h3>
+              <p>
+                Explored the relationship between students' lifestyle habits
+                (study hours, sleep, attendance, exercise, mental health) and
+                exam performance. Built an interactive Power BI dashboard to
+                visualize patterns that influence academic outcomes.
+              </p>
+              <div class="project-tools">
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-file-excel"></i> Excel</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-chart-bar"></i> Power BI</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Global AI Impact -->
+          <div class="project-card fade-up" data-tags="python powerbi">
+            <div class="project-img">
+              <img
+                src="./media/ai_analysis_dashboard.png"
+                alt="Global AI Impact Analysis"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KehindeOjo/Global-AI-Impact-Analysis"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Global AI Impact Analysis</h3>
+              <p>
+                Investigated the impact of AI adoption across industries,
+                workforce, and regulatory environments across multiple
+                countries. Used Python for data cleaning and analysis, then
+                built a Power BI dashboard highlighting AI-driven trends in
+                employment, economic growth, and public trust to support
+                insights for policymakers and stakeholders.
+              </p>
+              <div class="project-tools">
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-terminal"></i> Jupyter</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-brands fa-python"></i> Python</span
+                >
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-chart-bar"></i> Power BI</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Inventory Tracker -->
+          <div class="project-card fade-up delay-1" data-tags="excel">
+            <div class="project-img">
+              <img
+                src="./media/Inventory_tracker_Dashboard.png"
+                alt="Construction Inventory Tracker"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KehindeOjo/Inventory-Tracker"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Construction Site Inventory Tracker</h3>
+              <p>
+                Built an Excel-based inventory tracking system to manage the
+                inflow and outflow of construction materials. Integrated KPIs
+                and visual indicators to monitor stock levels in real time,
+                ensuring material availability, reducing waste, and improving
+                on-site operational efficiency.
+              </p>
+              <div class="project-tools">
+                <span class="tool-pill"
+                  ><i class="fa-solid fa-file-excel"></i> Excel</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section
+      class="section"
+      style="background: var(--navy); text-align: center"
+    >
+      <div class="section-inner dark-section">
+        <div class="section-label" style="justify-content: center">
+          Collaborate
+        </div>
+        <h2 class="section-title" style="text-align: center; color: white">
+          Have a Data Challenge?
+        </h2>
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0.75rem auto 2rem;
+            line-height: 1.7;
+          "
+        >
+          Let's work together on your next dashboard, financial model, or
+          automation project.
+        </p>
+        <a href="contact.html" class="btn-primary"
+          ><i class="fa-solid fa-envelope"></i> Start a Conversation</a
+        >
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Kehinde <span>Ojo</span></div>
+          <div class="footer-copy" style="margin-top: 4px">
+            Financial & Data Analyst · Lagos, Nigeria
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a href="#" class="back-to-top-btn"
+          ><i class="fa-solid fa-arrow-up"></i> Top</a
+        >
+      </div>
+      <div
+        style="
+          max-width: 1200px;
+          margin: 1.5rem auto 0;
+          padding: 1.5rem 2.5rem 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.07);
+          text-align: center;
+        "
+      >
+        <p class="footer-copy">&copy; 2025 Kehinde Ojo. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Filter logic for projects page
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          cards.forEach((card) => {
+            if (filter === 'all' || card.dataset.tags.includes(filter)) {
+              card.style.display = 'flex';
+              card.style.opacity = '1';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
