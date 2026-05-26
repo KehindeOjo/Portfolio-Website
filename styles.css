@@ -2029,6 +2029,19 @@ footer {
     padding: 7rem 1.25rem 4rem;
   }
 
+  .hero-title {
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+  }
+
+  .timeline-role {
+    font-size: 1rem;
+  }
+
+  .timeline-org {
+    font-size: 0.82rem;
+  }
+
   /* Show hero image on mobile — centered above content */
   .hero-image-card {
     display: block;
