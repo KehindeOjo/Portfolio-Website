@@ -1217,7 +1217,7 @@ ul {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 1.75rem;
+  gap: 1rem;
 }
 
 .project-card {
@@ -1239,7 +1239,7 @@ ul {
 .project-img {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 300px;
   background: var(--light-bg);
 }
 
