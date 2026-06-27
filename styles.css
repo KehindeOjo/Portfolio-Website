@@ -2086,6 +2086,17 @@ footer {
   .hero-image-card::before {
     inset: -2px;
   }
+
+  /* About image — match home hero sizing exactly */
+  .about-photo-wrap {
+    width: 220px;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .about-photo-wrap img {
+    height: 260px;
+    width: 220px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2119,7 +2130,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #25D366;
+  background: #25d366;
   color: #fff;
   font-size: 1.5rem;
   padding: 0.75rem 1.25rem 0.75rem 1rem;
@@ -2164,7 +2175,7 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: #25D366;
+  background: #25d366;
   color: #fff;
   font-family: 'DM Sans', sans-serif;
   font-size: 0.95rem;
@@ -2232,7 +2243,7 @@ footer {
   background: rgba(255, 255, 255, 0.07);
   border-color: rgba(201, 168, 76, 0.45);
   transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
 }
 
 .biz-solution-icon {
