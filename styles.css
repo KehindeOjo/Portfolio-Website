@@ -2589,3 +2589,8 @@ footer {
     white-space: normal;
   }
 }
+@media (max-width: 768px) {
+  .achievements-strip {
+    padding: 4rem 1.25rem;
+  }
+}
