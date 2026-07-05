@@ -2188,6 +2188,10 @@ footer {
     display: none;
   }
 
+  .hero-img-badgebootcamp {
+    display: none;
+  }
+
   .hero-image-card::before {
     inset: -2px;
   }
