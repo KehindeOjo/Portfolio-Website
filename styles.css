@@ -566,6 +566,85 @@ ul {
   margin-top: 3rem;
 }
 
+/* ---- Testimonial / Trainee Reviews ---- */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.testimonial-stars {
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-quote-icon {
+  color: var(--gold);
+  opacity: 0.35;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+  color: var(--text-mid);
+  font-style: italic;
+  line-height: 1.75;
+  flex-grow: 1;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.testimonial-role {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
 .service-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -763,6 +842,11 @@ ul {
 }
 
 .about-bio strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.hero-description strong {
   color: var(--gold);
   font-weight: 600;
 }
@@ -1928,6 +2012,9 @@ footer {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .achievements-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2018,6 +2105,9 @@ footer {
     margin-right: auto;
   }
   .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-grid {
     grid-template-columns: 1fr;
   }
   .achievements-grid {
