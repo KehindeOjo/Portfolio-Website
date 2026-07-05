@@ -2556,3 +2556,36 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.trainer-callout {
+  background: var(--navy);
+  padding: 3.5rem 1.25rem;
+}
+
+.trainer-callout-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.trainer-callout-text {
+  max-width: 620px;
+}
+
+.trainer-callout-btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .trainer-callout-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .trainer-callout-text {
+    max-width: 100%;
+  }
+  .trainer-callout-btn {
+    white-space: normal;
+  }
+}
