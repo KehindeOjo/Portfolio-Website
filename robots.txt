@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kehindeojo.netlify.app/sitemap.xml
